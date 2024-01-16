@@ -8,7 +8,8 @@ apache2-utils
 libapache2-mod-*
 ```
 
-Enabling a module
+Enabling/Disabling a module
 ```
 $ a2enmod <MODULE>
+$ a2dismod <MODULE>
 ```
