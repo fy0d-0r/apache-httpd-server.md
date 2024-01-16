@@ -8,6 +8,11 @@ apache2-utils
 libapache2-mod-*
 ```
 
+## Configuration Directories
+```
+/etc/apache2/sites-available
+```
+
 ## Basics
 Enabling/Disabling a module
 ```
