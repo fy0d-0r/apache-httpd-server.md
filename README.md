@@ -25,16 +25,19 @@ $ a2ensite <SITE>
 $ a2dissite <SITE>
 ```
 
-## Create a Custom Site
+## Creating Custom Sites(Virtual Hosts)
 ```
 $ vim /etc/apache2/sites-available/example.com.conf
 ```
 
-
-## Virtual Hosts
-
-
-
-
-
+```
+<VirtualHost *:80>
+	ServerAdmin webmaster@example.com
+	ServerName example.com
+	ServerAlias www.example.com
+	DocumentRoot /srv/www/example.com/public_html/
+	ErrorLog /srv/www/example.com/logs/error.log
+	CustomLog /srv/www/example.com/logs/access.log combined
+</VirtualHost>
+```
 
