@@ -69,3 +69,5 @@ $ a2ensite example.com
 $ a2ensite example.org
 $ systemctl reload apache2
 ```
+
+> NOTE: specific ip address in <VirtualHost> tap i.e <VirtualHost 1.2.3.4:80> has higher priority than wildcard.
