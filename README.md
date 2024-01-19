@@ -16,28 +16,28 @@ libapache2-mod-*
 ## Basics
 Enabling/Disabling modules
 ```
-$ a2enmod <MODULE>
-$ a2dismod <MODULE>
+# a2enmod <MODULE>
+# a2dismod <MODULE>
 ```
 Enabling/Disabling sites
 ```
-$ a2ensite <SITE>
-$ a2dissite <SITE>
+# a2ensite <SITE>
+# a2dissite <SITE>
 ```
 
 ## Creating Custom Sites(Virtual Hosts)
 
 ```
-$ mkdir -p /var/www/example.com/public_html
-$ mkdir /var/www/example.com/logs
+# mkdir -p /var/www/example.com/public_html
+# mkdir /var/www/example.com/logs
 
-$ mkdir -p /var/www/example.org/public_html
-$ mkdir /var/www/example.org/logs
+# mkdir -p /var/www/example.org/public_html
+# mkdir /var/www/example.org/logs
 ```
 
 ```
-$ vim /etc/apache2/sites-available/example.com.conf
-$ vim /etc/apache2/sites-available/example.org.conf
+# vim /etc/apache2/sites-available/example.com.conf
+# vim /etc/apache2/sites-available/example.org.conf
 ```
 
 ```
@@ -65,13 +65,13 @@ We can create multiple sites. For enabling perl,
 ```
 
 ```
-$ a2ensite example.com
-$ a2ensite example.org
-$ systemctl reload apache2
+# a2ensite example.com
+# a2ensite example.org
+# systemctl reload apache2
 ```
 
 ```
-$ apache2ctl -S
+# apache2ctl -S
 ```
 
 > NOTE: specific ip address in <VirtualHost> tap i.e <VirtualHost 1.2.3.4:80> has higher priority than wildcard.
@@ -80,7 +80,9 @@ $ apache2ctl -S
 
 - used to redirect one url to another url
 
-
+```
+# a2enmod rewrite
+```
 
 
 
