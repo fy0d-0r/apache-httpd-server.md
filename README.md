@@ -76,6 +76,15 @@ $ apache2ctl -S
 
 > NOTE: specific ip address in <VirtualHost> tap i.e <VirtualHost 1.2.3.4:80> has higher priority than wildcard.
 
+## Rewrite Engine
+
+- used to redirect one url to another url
+
+
+
+
+
+
 ## Enabling HTTPS
 
 ### Certificate Authority 
