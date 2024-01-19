@@ -82,6 +82,16 @@ $ apache2ctl -S
 
 `https://letsencrypt.org/`
 
+### Certbot
+
+- can be used for both nginx and apache
+
+```
+$ certbot --version
+```
+
+
+## OpenSSL
 
 
 
