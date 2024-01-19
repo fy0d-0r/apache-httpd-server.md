@@ -101,6 +101,11 @@ RewriteEngine On
 RewriteRule ^index.html$ test.html
 ```
 
+.htaccess
+```
+Redirect www.example.com example.com
+```
+
 
 
 ## Enabling HTTPS
