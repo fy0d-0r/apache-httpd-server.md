@@ -106,7 +106,7 @@ RewriteRule ^index.html$ test.html
 Redirect www.example.com example.com
 ```
 
-
+### Regular Expressions
 
 ## Enabling HTTPS
 
