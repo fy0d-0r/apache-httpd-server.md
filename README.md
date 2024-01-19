@@ -82,8 +82,24 @@ We can create multiple sites. For enabling perl,
 
 ```
 # a2enmod rewrite
+# systemctl restart apache2.service
 ```
 
+/etc/apache2/000-default.conf
+```
+DocumentRoot /var/www/html
+<Directory /var/www/html>
+	AllowOverride All
+</Directory>
+```
+This tells apache that the mod rewrite will be able to override the url for this virtual host at this directory level.
+
+
+/var/www/html/.htaccess
+```
+RewriteEngine On
+RewriteRule ^index.html$ test.html
+```
 
 
 
