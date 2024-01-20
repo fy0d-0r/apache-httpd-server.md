@@ -108,6 +108,9 @@ Redirect www.example.com example.com
 
 ### Regular Expressions
 
+
+
+
 ## Enabling HTTPS
 
 ### Certificate Authority 
